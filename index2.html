@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียด</title>
+  <style>
+    body {
+      background-color: #1E1E1E;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 320px; /* ขนาดเท่าหน้าแรก */
+      min-height: 580px; /* ขนาดเท่าหน้าแรก */
+      background-color: #181F29;
+      border-radius: 5px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr {
+      width: 120px; /* ขนาดคิวอาร์โค้ดตามหน้าแรก */
+      height: 120px;
+      margin-bottom: 15px; /* ปรับช่องว่างระหว่างคิวอาร์โค้ดกับข้อความ */
+    }
+
+    .heading {
+      font-size: 16px; /* ขนาดตัวอักษรเล็กลง */
+      text-align: center;
+      margin-top: 20px; /* ปรับให้ข้อความต่ำลง */
+    }
+
+    .instruction {
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.4; /* ชิดกันมากขึ้น */
+      white-space: pre-line;
+      margin-top: 15px; /* ปรับให้ข้อความต่ำลง */
+      max-width: 245px; /* ปรับให้ข้อความแคบลง */
+    }
+
+    button {
+      width: 90%;
+      padding: 10px;
+      margin-top: 30px; /* ปรับช่องว่างระหว่างปุ่มกับข้อความ */
+      font-size: 14px;
+      background-color: #DFB795;
+      color: #333;
+      border: 2px solid #EE7D30;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #FFB84D, #FFA07A);
+      border-color: #FF8C00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- คิวอาร์โค้ด -->
+    <img src="/Users/tasreefduelama/Downloads/IMG_7677.JPG" alt="QR Code" class="qr">
+
+    <!-- หัวข้อ -->
+    <div class="heading">🚨วิธีเข้า OpenChat โปรดอ่าน!!🚨</div>
+
+    <!-- ข้อความที่ชิดซ้าย -->
+    <div class="instruction">
+      1.) ให้น้องๆไปกรอกแบบฟอร์มลงทะเบียน ซึ่งอยู่ในหลัก
+
+      2.) เมื่อน้องๆกรอกแบบฟอร์มแล้ว ให้น้องๆสแกนเข้า OpenChatโดยใส่ “รหัสประจำตัวนักเรียน” ตรงที่ให้กรอกคำตอบและขอเข้าร่วมกลุ่ม
+
+      3.) เมื่อขอเข้าร่วมกลุ่มเสร็จแล้วพี่ๆจะทำการคัดกรอง โดยให้น้องๆรอไม่เกิน 1 วัน
+    </div>
+
+    <!-- ปุ่มกลับ -->
+    <button onclick="window.history.back()">⬅️ กลับ</button>
+  </div>
+</body>
+</html>
